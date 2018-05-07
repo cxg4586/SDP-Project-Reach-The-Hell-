@@ -13,7 +13,6 @@ android {
         versionName "1.0"
     }
     greendao {
-        //版本号，升级时可配置
         schemaVersion 1
     }
     buildTypes {
