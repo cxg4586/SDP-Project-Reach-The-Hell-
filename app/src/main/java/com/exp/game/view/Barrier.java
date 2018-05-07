@@ -13,24 +13,19 @@ import android.os.Message;
 import com.exp.game.R;
 
 /**
- * 辅助绘制障碍物的类
+ * 
  */
 public class Barrier {
-    //绘制的位置纵坐标
     public int mPositionY;
     public int mPositionX;
-    //障碍物的宽度
     private int mWidth;
-    //障碍物的高度
     private int mHeight;
-    //屏幕的宽度
     private int mScreenWidth;
-    //已经消失
     private boolean hidden = false;
 
     private Paint mPaint;
-    //当前的障碍物类型
-    private int type; // 0 普通 1 刺
+
+    private int type;
 
     @Override
     public boolean equals(Object o) {
@@ -77,8 +72,8 @@ public class Barrier {
     }
 
     /**
-     * 绘制一个黑色矩形
-     * @param canvas
+     * 
+     * 
      */
     public void drawBarrier(Resources resources, Canvas canvas) {
         if(hidden){
