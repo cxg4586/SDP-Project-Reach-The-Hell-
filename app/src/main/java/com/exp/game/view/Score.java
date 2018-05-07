@@ -8,7 +8,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 
 /**
- * //绘制得分面板
+ * 
  */
 public class Score {
 
@@ -22,7 +22,6 @@ public class Score {
         this.mPaint = paint;
     }
 
-    //绘制面板背景
     public void drawPanel(Canvas canvas) {
         canvas.save();
         canvas.drawRoundRect(new RectF(x, y, x + panelWidth, y + panelHeight), 0, 0, mPaint);
@@ -32,14 +31,12 @@ public class Score {
         mPaint.setShader(null);
         canvas.restore();
     }
-    //绘制分数
+
     public void drawScore(Canvas canvas, String text) {
         canvas.save();
         mPaint.setTextAlign(Paint.Align.CENTER);
         Paint.FontMetrics fontMetrics = mPaint.getFontMetrics();
-        //计算文字高度
         float fontHeight = fontMetrics.bottom - fontMetrics.top;
-        // 计算文字
         float textBaseY = panelHeight / 2 + fontHeight / 2 - fontMetrics.bottom;
         canvas.drawText(text, 130, y + textBaseY, mPaint);
         canvas.restore();
