@@ -138,7 +138,7 @@ public class GameActivity extends AppCompatActivity implements SurfaceViewLayout
         return new SimpleDateFormat("yyyy-MM-dd HH:mm").format(new Date());
     }
 
-    //播放BGM
+    //playing BGM
     private void startBgm() {
         load = soundPool.load(this, R.raw.background, 1);
         soundPool.setOnLoadCompleteListener(new SoundPool.OnLoadCompleteListener() {
