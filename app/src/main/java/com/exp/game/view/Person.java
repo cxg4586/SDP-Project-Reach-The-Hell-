@@ -11,7 +11,7 @@ import android.graphics.RectF;
 import com.exp.game.R;
 
 /**
- * 人物
+ * 
  */
 public class Person {
 
@@ -19,7 +19,7 @@ public class Person {
     public static final int SPEED = 10;
     private int mHeaderRadius;
     private Paint mPaint;
-    //下边缘坐标
+
     public int mPersonY;
     public int mPersonX;
     public int blood = SurfaceViewLayout.BLOOD_ALL;
@@ -61,7 +61,7 @@ public class Person {
     }
 
     /**
-     * @param canvas
+     * 
      */
     public void draw(Canvas canvas) {
 
