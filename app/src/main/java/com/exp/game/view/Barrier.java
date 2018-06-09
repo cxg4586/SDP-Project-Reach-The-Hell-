@@ -13,19 +13,24 @@ import android.os.Message;
 import com.exp.game.R;
 
 /**
- * 
+ * create platform
  */
 public class Barrier {
+    //giving x axis and y axis
     public int mPositionY;
     public int mPositionX;
+    //width of platform
     private int mWidth;
+    //height of platform
     private int mHeight;
+
     private int mScreenWidth;
+    //platform gone
     private boolean hidden = false;
 
     private Paint mPaint;
-
-    private int type;
+    //platform types
+    private int type; // 0=normal 1=spikes
 
     @Override
     public boolean equals(Object o) {
@@ -72,8 +77,8 @@ public class Barrier {
     }
 
     /**
-     * 
-     * 
+     * black triangle
+     *
      */
     public void drawBarrier(Resources resources, Canvas canvas) {
         if(hidden){

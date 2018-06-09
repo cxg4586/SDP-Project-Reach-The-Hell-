@@ -28,7 +28,7 @@ public class GameActivity extends AppCompatActivity implements SurfaceViewLayout
     private View right; //buttonright
     private SoundPool soundPool; //PlayBGM
     private int load; //loadIdofBGM
-    private AlertDialog dialog; //GameOverdialog
+    public AlertDialog dialog; //GameOverdialog
     private TextView title; //dialogtitle
     private boolean saved; //savedornot
     private EditText usernameEditText; //InputPlayerName

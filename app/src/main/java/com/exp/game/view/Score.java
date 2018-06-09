@@ -8,7 +8,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 
 /**
- * 
+ * //drawing scoreboard
  */
 public class Score {
 
@@ -22,6 +22,7 @@ public class Score {
         this.mPaint = paint;
     }
 
+    //background of scoreboard
     public void drawPanel(Canvas canvas) {
         canvas.save();
         canvas.drawRoundRect(new RectF(x, y, x + panelWidth, y + panelHeight), 0, 0, mPaint);
@@ -31,7 +32,7 @@ public class Score {
         mPaint.setShader(null);
         canvas.restore();
     }
-
+    //score
     public void drawScore(Canvas canvas, String text) {
         canvas.save();
         mPaint.setTextAlign(Paint.Align.CENTER);

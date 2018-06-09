@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 26
     buildToolsVersion '27.0.3'
 
     defaultConfig {
@@ -11,8 +11,11 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     greendao {
+        //版本号，升级时可配置
         schemaVersion 1
     }
     buildTypes {
@@ -24,7 +27,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'org.greenrobot:greendao:3.2.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'org.greenrobot:greendao:3.2.0'
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'com.android.support.test:runner:0.2'
+    androidTestImplementation 'com.android.support.test:rules:0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.1'
+    //androidTestImplementation 'org.hamcrest:hamcrest-library:1.3'
 }

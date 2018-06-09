@@ -20,7 +20,7 @@
             android:layout_height="50dp" />
 
         <TextView
-            android:text="Socre"
+            android:text="Score"
             android:textSize="16sp"
             android:textColor="#fff"
             android:layout_weight="1"

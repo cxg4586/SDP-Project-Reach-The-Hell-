@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat Jun 09 14:17:45 NZST 2018
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\brook\\Desktop\\Game\\app\\build\\intermediates\\transforms\\dexMerger\\androidTest\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
